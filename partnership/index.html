@@ -882,7 +882,7 @@ h2 em { font-style: italic; color: var(--gold-light); }
     const form = document.getElementById('contact-form');
     btn.textContent = 'Sending…'; btn.disabled = true;
     const formData = new FormData(form);
-    fetch('/', {
+    fetch('/partnership/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: new URLSearchParams(formData).toString()
